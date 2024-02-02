@@ -1,5 +1,5 @@
 import socket
-# https://www.youtube.com/watch?v=Lbfe3-v7yE0
+# ref  https://www.youtube.com/watch?v=Lbfe3-v7yE0
 s= socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 s.bind((socket.gethostname(),1234))
 
