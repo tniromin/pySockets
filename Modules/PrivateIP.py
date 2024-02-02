@@ -9,6 +9,7 @@ def get_pvt_ip():
         s.connect(('10.255.255.255', 1))
 
         # Get the local IP address assigned by the operating system
+        # This is the Link-local Ipv6 Address
         private_ip = s.getsockname()[0]
 
         # Close the socket
@@ -18,3 +19,14 @@ def get_pvt_ip():
     except Exception as e:
         print(f"Error : {e}")
         return 0
+
+def test_pvt_ip():
+    IP = get_pvt_ip()
+
+    if IP == '192.168.8.185' :
+        return 1
+    else :
+        return 0
+
+
+
