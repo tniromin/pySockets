@@ -1,7 +1,12 @@
 # This is a sample Python script.
+"""
 import Modules.Hi as Hello
 import Modules.PrivateIP as pvtIP
+"""
+# modules
 import Modules.Test as tst1
+import Modules.server as serv
+
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
@@ -12,7 +17,11 @@ def print_hi(name):
 
 def run():
     tst1.run()
+    serv.start()
+    cmd = input("Enter Command:") # Implement command library
 
+    while (cmd != 'quit'):
+        cmd = input()
 
 
 # Press the green button in the gutter to run the script.
