@@ -4,24 +4,29 @@ import Modules.Hi as Hello
 import Modules.PrivateIP as pvtIP
 """
 # modules
+
+
 import Modules.Test as tst1
 import Modules.server as serv
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
 def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+    print(f'Hi, {name}')
 
 def run():
+    # Run the Test.py
+    ## Test will check if the private IP is a certain recorded IP address which will be later recorded in a text file
+    ### For now this file doesnt exist thus will have to give the private address to it.
     tst1.run()
+
+    # Server start will start the server where the server will listen for transmissions or simply transmit data.
     serv.start()
     cmd = input("Enter Command:") # Implement command library
 
     while (cmd != 'quit'):
-        cmd = input()
+        cmd = input("Enter Input:")
 
 
 # Press the green button in the gutter to run the script.

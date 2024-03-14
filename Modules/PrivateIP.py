@@ -22,11 +22,12 @@ def get_pvt_ip():
 
 def test_pvt_ip():
     IP = get_pvt_ip()
+    print("Running Test IP\n")
 
-    if IP == '192.168.8.185' :
+    if IP == '192.168.244.199':
         return 1
     else :
         return 0
 
-
+test_pvt_ip()
 

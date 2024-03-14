@@ -6,6 +6,7 @@ s.bind((socket.gethostname(),1234))
 s.listen(5) # 5 connections at a time (Thi is a Que)
 
 def start():
+    print("Running Start")
     while True:
         clientsocket , address = s.accept()
         print(f"Connection from {address} has been established at {clientsocket}")
